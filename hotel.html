@@ -3,12 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>Hotelzimmer-Buchungssystem</title>
-
 </head>
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
 
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+  <fieldset>
+    <legend>Zimmertyp:</legend>
+    <label for="zimmertyp">Wählen Sie den Zimmertyp:</label>
+    <select name="zimmertyp[]" id="zimmertyp" size="5" multiple>
+      <option value="Einzelzimmer">Einzelzimmer</option>
+      <option value="Doppelzimmer">Doppelzimmer</option>
+      <option value="Suite">Suite</option>
+      <option value="Megazimmer">Megazimmer</option>
+      <option value="Kingzimmer">Kingzimmer</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Zusatzleistungen:</legend>
+    <input type="checkbox" name="zusatzleistungen[]" value="frühstück" id="check1" checked>
+    <label for="check1">Frühstück</label><br>
+    <input type="checkbox" name="zusatzleistungen[]" value="flugtransfer" id="check2">
+    <label for="check2">Flugtransfer</label><br>
+    <input type="checkbox" name="zusatzleistungen[]" value="spa-zugang" id="check3">
+    <label for="check3">Spa-Zugang</label><br>
+    <input type="checkbox" name="zusatzleistungen[]" value="taxi" id="check4">
+    <label for="check4">Taxi</label><br>
+    <input type="checkbox" name="zusatzleistungen[]" value="chauffeur" id="check5">
+    <label for="check5">Chauffeur</label><br>
+    <input type="checkbox" name="zusatzleistungen[]" value="all inclusive" id="check6">
+    <label for="check6">All Inclusive</label>
+  </fieldset>
+
+  <button type="submit">Submit</button>
+</form>
 
 </body>
 </html>
